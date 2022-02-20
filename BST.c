@@ -169,29 +169,6 @@ int FindHeight(Node* root){
 	}
 	return MAX(FindHeight(root->left),FindHeight(root->right))+1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int main()
 {
 	root = insert(root,5); root = insert(root,10);
