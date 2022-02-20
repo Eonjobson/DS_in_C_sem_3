@@ -45,14 +45,15 @@ int dequeue(){
 	return deq;
 }
 void display(){
-	if(front==-1 && rear == -1){
-		printf("Empty Queue\n");
+	if(front == -1 && rear == -1){
+		printf("Empty Queue");
+		return;
 	}
-	else{
-		for(int i=front;i<=rear;i++){
-			printf("%d\t",q[i]);
-		}
-	}
+	int i=front;
+	do{
+		printf("%d",Q[i]);
+		i=(i+1)%SIZE;
+	}while(i!=(rear+1)%SIZE);
 }
 void main(){
 	int ch,n;
