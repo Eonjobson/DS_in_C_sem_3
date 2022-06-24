@@ -1,2 +1,4 @@
-# DS_in_C_sem_3
+# DS-DAA
 Implementation of various data structures in C learnt in 3rd sem
+&&
+Implementation of algorithms learnt in sem4
