@@ -23,14 +23,14 @@ void main()
         for (int capacity = 1; capacity <= w; capacity++)
         {
             
-            int maxValWithoutCurr = mat[item - 1][capacity];
+            int maxValWithoutCurr = mat[item - 1][capacity]; //This is nothing but the value it is so far from the table entry right above it
             int maxValWithCurrent = 0;
             int weightOfCurrent = wt[item - 1];
             if (capacity >= weightOfCurrent)
             {
-                maxValWithCurrent = val[item - 1];
-                int remainingCapacity = capacity - weightOfCurrent;
-                maxValWithCurrent += mat[item - 1][remainingCapacity];
+                maxValWithCurrent = val[item - 1];  //It should atleast be equal to the value of this item
+                int remainingCapacity = capacity - weightOfCurrent; //We find the max value possible for the remaining weight
+                maxValWithCurrent += mat[item - 1][remainingCapacity]; 
             }
 
             mat[item][capacity] = MAX(maxValWithCurrent, maxValWithoutCurr);
