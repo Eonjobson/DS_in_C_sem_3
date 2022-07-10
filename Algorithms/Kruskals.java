@@ -1,4 +1,4 @@
-public class KruskalsEdgeList {
+public class Kruskals {
 
   // Union find data structure
   static class UnionFind {
