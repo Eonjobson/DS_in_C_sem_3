@@ -15,7 +15,6 @@ public class basicProblem1 {
         n = sc.nextInt(); //n-1
         t = sc.nextInt(); //index I wanna go to (1 Indexed)
         int a[] = new int[n];
-        System.out.println("Enter array element");
         for(int i=0; i<n-1; i++){
             a[i] = sc.nextInt();
         }   
